@@ -1,38 +1,150 @@
-.App {
-  text-align: center;
+* {
+  box-sizing: border-box;
+  margin: 0;
+  padding: 0;
+  font-family: "Ubuntu Condensed", sans-serif;
 }
 
-.App-logo {
-  height: 40vmin;
-  pointer-events: none;
+a {
+  text-decoration: none;
 }
 
-@media (prefers-reduced-motion: no-preference) {
-  .App-logo {
-    animation: App-logo-spin infinite 20s linear;
-  }
+ul {
+  list-style-type: none;
 }
 
-.App-header {
-  background-color: #282c34;
-  min-height: 100vh;
+.container {
+  width: 85%;
+  margin: auto;
+}
+
+/*Nav Bar*/
+.nav {
+  background: rgb(73, 209, 209);
+  color: #fff;
+  height: 4.2rem;
+  width: 100%;
+}
+
+.title {
+  font-size: 3rem;
+  float: left;
+  margin-left: 0.5rem;
+}
+
+.title a {
+  color: #fff;
+}
+
+.nav-menu {
+  float: right;
   display: flex;
-  flex-direction: column;
-  align-items: center;
+  margin-right: 0.5rem;
+}
+
+.nav-menu li {
+  margin-right: 1rem;
+  margin-top: 1.2rem;
+}
+
+.nav-menu li a {
+  font-size: 1.5rem;
+  color: #fff;
+  text-decoration: none;
+}
+
+/*search bar*/
+.searchArea {
+  background: #fff;
+  height: 10rem;
+  width: 100%;
+  display: flex;
   justify-content: center;
-  font-size: calc(10px + 2vmin);
-  color: white;
+  align-items: center;
 }
 
-.App-link {
-  color: #61dafb;
+.searchArea input[type="text"] {
+  width: 35rem;
+  height: 2.2rem;
+  outline: none;
+  border-radius: 3px;
+  border: 1px solid rgb(107, 106, 106);
 }
 
-@keyframes App-logo-spin {
-  from {
-    transform: rotate(0deg);
-  }
-  to {
-    transform: rotate(360deg);
-  }
+.searchArea button {
+  background: rgb(3, 100, 245);
+  font-size: 1.1rem;
+  position: relative;
+  right: 0.6rem;
+  color: #fff;
+  border: none;
+  height: 2.2rem;
+  width: 5rem;
+  border-radius: 3px;
+  outline: none;
+}
+
+.searchArea button:hover {
+  background: rgb(63, 140, 255);
+}
+
+/*Card Area*/
+.cardGrid {
+  display: flex;
+  flex-direction: row;
+  flex-wrap: wrap;
+}
+
+/*Card*/
+.card {
+  background: #fff;
+  color: #686868;
+  width: 23rem;
+  height: 19rem;
+  padding: 1.7rem;
+  border: #c9c9c9 1px solid;
+  border-radius: 5px;
+  margin: 0.3rem;
+}
+
+.card-info {
+  display: grid;
+  grid-template-columns: 1fr 2fr;
+  grid-gap: 2rem;
+  margin-top: 0.6rem;
+}
+
+.description {
+  height: 30vh;
+  overflow-y: scroll;
+}
+
+.description::-webkit-scrollbar {
+  width: 0;
+}
+
+.star:hover {
+  color: rgb(131, 165, 165);
+}
+
+/*star*/
+.star {
+  position: relative;
+  left: 98%;
+  bottom: 5%;
+  color: rgb(85, 105, 105);
+}
+
+.favored {
+  color: gold;
+}
+
+.favored:hover {
+  color: rgb(226, 195, 17);
+}
+
+/*favorites*/
+.favorite-title {
+  text-align: center;
+  font-size: 3.5rem;
 }
