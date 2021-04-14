@@ -1,12 +1,13 @@
 import React from 'react'
+import {Link} from 'react-router-dom'
 
 export const Nav = () => {
     return (
         <section className = 'nav'>
-             <h3 className = 'title'><a href='/'>Beans Love Beer</a></h3>
+             <h3 className = 'title'><Link href='/'>Beans Love Beer</Link></h3>
              <ul className = 'nav-menu'>
-                <li><a href = '/'>Home</a></li>
-                <li><a href = '/favorites'>Favorites</a></li> 
+                <li><Link to = '/'>Home</Link></li>
+                <li><Link to = '/favorites'>Favorites</Link></li> 
              </ul>
         </section>
     )
